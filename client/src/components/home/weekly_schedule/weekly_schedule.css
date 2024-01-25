@@ -1,0 +1,55 @@
+.table-container{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+table{
+    background-color: black;
+    width: 100%;
+}
+
+td, th{
+    text-align: start;
+    color: aliceblue;
+    width: fit-content;
+    padding: 20px;
+    border: solid;
+    border-width: 2px;
+    border-color: aliceblue;
+}
+
+
+tr .pink{
+    color: rgb(241, 169, 181);
+}
+
+tr .red{
+    color: rgb(255, 62, 62);
+}
+
+tr .green{
+    color: rgb(181, 244, 181);
+}
+
+tr .purple{
+    color: rgb(247, 125, 247);
+}
+
+tr .orange{
+    color: orange;
+}
+
+tr .blue{
+    color: rgb(125, 125, 236);
+}
+
+tr .gold{
+    color: gold;
+}
+
+@media screen and (max-width: 1200px){
+    .table-container{
+        overflow: scroll;
+    }
+}

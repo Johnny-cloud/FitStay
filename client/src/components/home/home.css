@@ -1,0 +1,12 @@
+.home > *{
+    padding: 5% 0;
+}
+
+.home h5{
+    background-color: red;
+    color: aliceblue;
+    width: fit-content;
+    padding: 0 2%;
+    margin: auto;
+    margin-bottom: 15px;
+}

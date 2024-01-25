@@ -1,0 +1,19 @@
+.home-about > *{
+    width: 500px;
+    height: 600px;
+    margin: 15px;
+}
+
+.home-about .image-container{
+    width: 600px;
+}
+
+.home-about img{
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+    .home-about .image-container{
+        height: 400px;
+    }
+}

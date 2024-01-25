@@ -1,0 +1,13 @@
+.navbar{
+    background-color: black;
+}
+
+.navbar-brand{
+    color: aliceblue;
+}
+
+nav a{
+    margin:0 10px;
+    text-decoration: none;
+    color: aliceblue;
+}

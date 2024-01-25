@@ -1,0 +1,29 @@
+.why-us > *{
+    width: 500px;
+    height: 600px;
+    margin: 15px;
+}
+
+.why-us img{
+    border-radius: 0 80px;
+}
+
+li{
+    list-style-type: none;
+}
+
+.our-numbers > *{
+    width: fit-content;
+    padding: 20px;
+    margin: 15px;
+    border: solid;
+    border-width: 2px;
+    border-radius: 20px 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .why-us .image-container{
+        width: 400px;
+        height: 450px;
+    }
+}

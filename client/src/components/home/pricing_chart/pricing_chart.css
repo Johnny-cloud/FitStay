@@ -1,0 +1,48 @@
+.pricing-chart{
+    background-color: rgb(243, 243, 243);
+}
+
+.plan{
+    width: 350px;
+    height: 550px;
+    border: solid;
+    border-color: gray;
+    border-width: 2px;
+    text-align: center;
+    margin: 15px;
+    background-color: black;
+    color: white;
+}
+
+.plan > *{
+    margin: 20px;
+    text-align: start;
+}
+
+.plan p{
+    text-align: center;
+}
+
+.plan a{
+    background-color: red;
+    color: white;
+    padding: 4% 5%;
+}
+
+.plan .purchase-btn{
+    margin-top: 50px;
+}
+
+.plan li{
+    margin: 10px;
+    text-align: start;
+}
+
+.plan .pricing{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.pricing-chart .flex-row-center{
+    margin-top: 50px
+}

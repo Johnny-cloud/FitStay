@@ -1,0 +1,33 @@
+.upcoming-class{
+    background-color: rgb(243, 242, 242);
+}
+
+.upcoming{
+    width: 350px;
+    height: 550px;
+    margin: 15px;
+    border: solid;
+    border-width: 2px;
+    border-color: rgb(221, 220, 220);
+    background-color: white;
+}
+
+.upcoming img{
+    height: 400px;
+}
+
+.upcoming .details h4, .upcoming .details p{
+    color: black;
+    width: fit-content;
+    margin: 10px auto;
+}
+
+.upcoming .bi{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.upcoming-class .flex-row-center{
+    width: 80%;
+    margin: auto;
+}
