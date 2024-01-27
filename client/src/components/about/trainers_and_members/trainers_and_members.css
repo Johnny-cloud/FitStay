@@ -1,0 +1,27 @@
+.trainers-and-members{
+    background-color: rgb(247, 243, 243);
+}
+
+.trainers-and-members .flex-row-center > *{
+    width: 500px;
+    height: 150px;
+    margin: 15px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.trainers-and-members .details-container{
+    width: 70%;
+    background-color: white;
+    color: black;
+    padding: 30px;
+    clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
+}
+
+.trainers-and-members .image-container{
+    height: 100%;
+    width: 60%;
+    margin-left: -60px ;
+}

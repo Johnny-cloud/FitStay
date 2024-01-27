@@ -8,6 +8,7 @@ import WeeklySchedule from './weekly_schedule/WeeklySchedule'
 import PricingChart from './pricing_chart/PricingChart'
 import ShopOnline from './shop_online/ShopOnline'
 import Testimonials from './testimonials/Testimonials'
+import Blogs from './blogs/Blogs'
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
       <PricingChart />
       <ShopOnline />
       <Testimonials />
+      <Blogs />
     </div>
   )
 }

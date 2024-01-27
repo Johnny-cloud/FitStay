@@ -1,0 +1,18 @@
+.top-landing{
+    height: 500px;
+    background-color: black;
+    color: white;
+    position: relative;
+}
+
+.top-landing h1{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+
+@media screen and (max-width: 1200px) {
+    .top-landing{
+        height: 300px;
+    }
+}

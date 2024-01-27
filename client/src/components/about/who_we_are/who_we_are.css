@@ -1,0 +1,32 @@
+.who-we-are .flex-row-center > *{
+    width: 500px;
+    height: 600px;
+    margin: 15px;
+}
+
+.who-we-are .image-container{
+    width: 600px;
+
+}
+
+.who-we-are .image-container img{
+    border-radius: 50%;
+}
+
+.who-we-are .contact-link{
+    margin: 30px 0;
+
+}
+
+.who-we-are .contact-us-btn{
+    padding: 2%;
+    background-color: red;
+    color: white;
+}
+
+@media screen and (max-width: 1200px) {
+    .who-we-are .image-container{
+        width: 400px;
+        height: 400px;
+    }
+}

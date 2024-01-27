@@ -1,0 +1,26 @@
+.online-item{
+    width: 300px;
+    height: 500px;
+    background-color: rgb(251, 249, 247);
+    margin: 15px;
+    border: solid;
+    border-width: 2px;
+    border-color: rgb(231, 230, 230);
+}
+
+.online-item img{
+    height: 350px;
+}
+
+.online-item .add-to-cart-btn{
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 2%;
+}
+
+.price{
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+}

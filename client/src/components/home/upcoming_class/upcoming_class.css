@@ -28,6 +28,6 @@
 }
 
 .upcoming-class .flex-row-center{
-    width: 80%;
+    max-width: 1500px;
     margin: auto;
 }
