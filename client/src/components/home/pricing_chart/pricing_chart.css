@@ -4,13 +4,15 @@
 
 .plan{
     width: 350px;
-    height: 550px;
+    height: 520px;
     border: solid;
     border-width: 2px;
     text-align: center;
     margin: 15px;
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    border: none;
 }
 
 .plan > *{
@@ -38,6 +40,7 @@
 .plan .pricing{
     font-size: 40px;
     font-weight: bold;
+    background-color: white;
 }
 
 .pricing-chart .flex-row-center{

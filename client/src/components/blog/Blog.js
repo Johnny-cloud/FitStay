@@ -1,8 +1,11 @@
 import './blog.css'
+import TopLanding from '../top_landing/TopLanding'
 
 const Blog = () => {
   return (
-    <div>Blog</div>
+    <div className='blogs-section'>
+      <TopLanding landingTitle={'Our Blogs'}/>
+    </div>
   )
 }
 

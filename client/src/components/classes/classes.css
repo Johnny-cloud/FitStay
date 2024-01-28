@@ -1,0 +1,58 @@
+.classes{
+    background-color: rgb(240, 240, 240);
+}
+
+.classes .flex-row-center{
+    padding: 50px 0;
+    max-width: 1500px;
+    margin: auto;
+}
+
+.class-item{
+    width: 400px;
+    height: 350px;
+    margin: 15px;
+    background-color: white;
+    color: black;
+    position: relative;
+    border-radius: 10px;
+}
+
+.class-item p{
+    text-align: center;
+}
+
+.class-item .time-container{
+    position: absolute;
+    left: 30%;
+    bottom: 0;
+    background-color: red;
+    color: white;
+    padding: 1%  7%;
+    clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
+}
+
+.class-item .details-container{
+    height: 100px;
+}
+
+.class-item .image-container{
+    display: block;
+    height: 250px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.class-item .image-container:hover{
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+  cursor: pointer;
+}
+
+.class-item:hover .image-container{
+    filter: grayscale(0%);
+}
+
+.class-item .title:hover{
+    color: red;
+}

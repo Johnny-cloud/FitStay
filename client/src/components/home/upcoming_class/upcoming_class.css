@@ -10,10 +10,25 @@
     border-width: 2px;
     border-color: rgb(221, 220, 220);
     background-color: white;
+    border-radius: 10px;
+    border: none;
 }
 
 .upcoming img{
     height: 400px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.upcoming img:hover{
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    cursor: pointer;
+}
+
+.upcoming:hover img{
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
 }
 
 .upcoming .details h4, .upcoming .details p{

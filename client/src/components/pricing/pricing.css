@@ -1,0 +1,77 @@
+.pricing{
+    background-color: rgb(241, 241, 241);
+}
+
+.pricing .flex-row-center{
+    padding: 20px 0;
+}
+
+.pricing .intro-section{
+    padding: 50px 0;
+}
+
+.pricing .intro-section p{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.pricing .pricing-plan{
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    position: relative;
+    color: black;
+    margin: 15px;
+}
+
+.pricing .pricing-plan .image-container{
+    height: 200px;
+    background-color: white;
+    -webkit-filter: grayscale(70%);
+    filter: grayscale(70%);
+}
+
+.pricing .pricing-plan p{
+    text-align: center;
+}
+
+.pricing .pricing-plan li{
+    margin: 10px;
+}
+
+.pricing .details > *{
+    margin: 20px;
+}
+
+.pricing .price{
+    font-size: 60px;
+    color: black;
+}
+
+.pricing .purchase-btn{
+    padding: 3%;
+    background-color: red;
+    color: white;
+}
+
+.pricing .pricing-type{
+    position: absolute;
+    top: 150px;
+    height: 50px;
+    padding: 3% 10%;
+    background-color: white;
+    left: 28%;
+    color: black;
+    font-weight: bold;
+    clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.pricing-plan:hover .pricing-type{
+    background-color: red;
+    color: white;
+    clip-path: polygon(0% 0%, 100% 20%, 100% 100%, 0% 100%);
+}
+
+.pricing .purchase-btn-container{
+    margin-top: 30px;
+}

@@ -1,0 +1,32 @@
+.gallery .image-container{
+    width: 370px;
+    height: 500px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.gallery img{
+    border-radius: 10px;
+}
+
+.gallery .flex-row-center{
+    max-width: 1500px;
+    margin: auto;
+    padding: 50px 0 0px;
+    margin-bottom: 0px;
+}
+
+.gallery .page-btns-container{
+    padding-bottom: 40px;
+}
+
+.gallery .page-btn{
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
