@@ -2,20 +2,23 @@ import './blogs.css'
 
 const Blogs = () => {
     const blogs = [
-        {
-            name: "Yoga",
-            description: "Staying in shape with yoga",
-            image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1999&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        { 
+            author: "Jenny",
+            title: "Yoga For The Family",
+            category: "yoga",
+            image: "https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         },
-        {
-            name: "Karate",
-            description: "Karate for everyone in 2024",
-            image: "https://images.unsplash.com/photo-1598300606161-4019d0dfec28?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        { 
+            author: "Grace",
+            title: "Boxing Right During Boxing",
+            category: "boxing",
+            image: "https://images.unsplash.com/photo-1495555687398-3f50d6e79e1e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         },
-        {
-            name: "Fitness",
-            description: "Meet our fitness trainer Jennifer",
-            image: "https://images.unsplash.com/photo-1550345332-09e3ac987658?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        { 
+            author: "Franklin",
+            title: "Body Building After Festivities",
+            category: "body building",
+            image: "https://images.unsplash.com/photo-1605296867424-35fc25c9212a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         },
     ]
   return (
@@ -31,8 +34,8 @@ const Blogs = () => {
                         <div className='blog image-container'>
                             <img src={blog.image} alt='' />
                             <div className='details'>
-                                <h6>{blog.name}</h6>
-                                <h4>{blog.description}.</h4>
+                                <h6>{blog.category}</h6>
+                                <h4>{blog.title}.</h4>
                             </div>
                         </div>
                     )

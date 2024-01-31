@@ -4,7 +4,7 @@ import {Navbar, Nav, Container, Offcanvas} from 'react-bootstrap'
 
 const Navigations = () => {
   return (
-    <Navbar expand="lg" fixed='top'>
+    <Navbar expand="lg" fixed='top' variant='dark'>
       <Container>
         <Navbar.Brand><h2>FitStay</h2></Navbar.Brand>
         <Navbar.Toggle />
@@ -20,8 +20,10 @@ const Navigations = () => {
                 <Link to={'/pricing'}>Pricing</Link>
                 <Link to={'gallery'}>Gallery</Link>
                 <Link to={'/schedule'}>Schedule</Link>
-                <Link to={'/blog'}>Blog</Link>
+                <Link to={'/blog'}>Blogs</Link>
+                <Link to={'/blog-details'}>Blog Details</Link>
                 <Link to={'/shop'}>Shop</Link>
+
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>

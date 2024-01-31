@@ -1,0 +1,109 @@
+.blog-details-main{
+    position: relative;
+}
+
+.blog-details{
+    max-width: 800px;
+    margin: 10px;
+    padding-top: 50px;
+}
+
+.blog-details h2{
+    text-align: justify;
+}
+
+.blog-details .blog .image-container{
+    width: 800px;
+    height: 500px;
+}
+
+.blog-details .images-container .image-container{
+    width: 350px;
+    height: 230px;
+    margin: 15px;
+    background-color: rgb(189, 189, 189);
+}
+
+.blog-details .exercise-benefits .quote{
+    background-color: rgb(249, 233, 233);
+    padding: 30px 80px;
+    clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+    font-size: 20px;
+}
+
+.blog-details .exercise-benefits > *, .blog-details-section .blog .details-section > *{
+    margin: 30px 0;
+}
+
+
+.blog-details .tags{
+    justify-content: flex-start;
+}
+
+.blog-details .tags > *{
+    margin: 0 5px;
+    font-size: 16px;
+}
+
+.blog-details .tag-bordered{
+    border: solid;
+    border-width: 1px;
+    border-color: gray;
+    border-radius: 20px;
+    padding: 5px 5px 0;
+}
+
+.blog-details .tags-section{
+    justify-content: space-between;
+    border-top: solid;
+    border-bottom: solid;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    padding: 18px 0;
+    border-top-color: rgb(168, 167, 167);
+    border-bottom-color: rgb(183, 182, 182);
+}
+
+.blog-details .tags-section > *{
+    margin: 15px 0;
+}
+
+.blog-details .tags-section h4{
+    font-size: 19px;
+    margin-top: 10px;
+}
+
+.blog-details .socials i{
+    font-size: 25px;
+    
+}
+
+.blog-details .social{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(232, 231, 231);
+    margin: 0 10px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .blog-details .blog .image-container{
+        width: 400px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .blog-details .blog .image-container{
+        width: 380px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .blog-details .blog .image-container{
+        width: 360px;
+        height: 250px;
+    }
+}

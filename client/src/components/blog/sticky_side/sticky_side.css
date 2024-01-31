@@ -1,0 +1,66 @@
+.sticky-side{
+    width: 400px;
+}
+
+.sticky-side .filtering-container{
+    width: 100%;
+    margin: 15px;
+    height: fit-content;
+    position: sticky;
+    top: -150%;
+}
+
+.sticky-side .filtering-container > *{
+    background-color: rgb(232, 230, 230);
+    text-align: start;
+    width: 100%;
+    margin: 15px;
+    height: fit-content;
+}
+
+.sticky-side .filtering-container  li{
+    margin: 15px;
+    padding: 10px;
+    border-bottom: solid;
+    border-bottom-color: white;
+    border-bottom-width: 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.sticky-side .filtering-container  li > *{
+    margin: 7px
+}
+
+.sticky-side .filtering-container li:hover{
+    color: red;
+}
+
+.sticky-side .recent-posts img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.sticky-side .recent-posts li a {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.sticky-side .recent-posts li a  > *{
+    margin: 7px;
+}
+
+.sticky-side .recent-posts .details-container p {
+    font-size: 16px;
+}
+
+.sticky-side .recent-posts .details-container h6 {
+    font-size: 18px;
+}
+
+.sticky-side .advert{
+    height: 550px
+}

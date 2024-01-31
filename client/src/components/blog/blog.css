@@ -1,0 +1,56 @@
+.blogs-section .main-container{
+    max-width: 1500px;
+    margin: auto;
+    padding: 50px 0;
+    position: relative;
+}
+
+.blogs-section .blogs-container{
+    max-width: 800px;
+    margin: 10px;
+}
+
+.blogs-section .blog{
+    width: 800px;
+    height: 700px;
+    margin: 15px;
+}
+
+.blogs-section .blog > *{
+    margin-bottom: 15px;
+}
+
+.blogs-section .blog .image-container{
+    height: 450px;
+    background-color: black;
+}
+
+.blogs-section .read-more-btn{
+    background-color: red;
+    color: white;
+    padding: 1% 2%;
+}
+
+
+@media screen and (max-width: 600px) {
+    .blogs-section .blog{
+        width: 400px;
+        height: 480px;
+    }
+
+    .blogs-section .blog .image-container{
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .blogs-section .blog{
+        width: 350px;
+        height: 480px;
+    }
+
+    .blogs-section .blog .image-container{
+        height:200px;
+    }
+}
+
