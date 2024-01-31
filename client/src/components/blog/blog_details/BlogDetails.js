@@ -57,6 +57,30 @@ const BlogDetails = () => {
                             <div className='social'><i class="bi bi-instagram"></i></div>
                         </div>
                     </div>
+
+                    <div className='author-section image-comment flex-row-center'>
+                        <div className='image-container'><img src='https://images.unsplash.com/photo-1600486913747-55e5470d6f40?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' alt=''/></div>
+                        <div className='details flex-row-center'>
+                            <h4>Admin</h4>
+                            <p>“The hard days are the best because that’s when champions are made, so if you push through, you can push through anything.” </p>
+                        </div>
+                    </div>
+
+                    <h2>Comments</h2>
+                    <div className='author-section image-comment flex-row-center'>
+                        <div className='image-container'><img src='https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' alt=''/></div>
+                        <div className='details flex-row-center'>
+                            <h4>Janie</h4>
+                            <p>“Your writing changed my life in a lot more positive way. Many thanks.” </p>
+                        </div>
+                    </div>
+                    <div className='author-section image-comment flex-row-center'>
+                        <div className='image-container'><img src='https://images.unsplash.com/photo-1495716868937-273203d5bb0c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' alt=''/></div>
+                        <div className='details flex-row-center'>
+                            <h4>Ann Marie</h4>
+                            <p>“Our growing softness, and our increasing lack of physical fitness, is a menace to our security” </p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <StickySide blogs={blogsList} />
