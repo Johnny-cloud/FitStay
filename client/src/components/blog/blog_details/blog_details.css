@@ -1,11 +1,12 @@
 .blog-details-main{
     position: relative;
+    padding-top: 30px;
 }
 
 .blog-details{
     max-width: 800px;
     margin: 10px;
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
 .blog-details h2{
@@ -18,8 +19,8 @@
 }
 
 .blog-details .images-container .image-container{
-    width: 360px;
-    height: 250px;
+    width: 350px;
+    height: 230px;
     margin: 10px;
     background-color: rgb(189, 189, 189);
 }
@@ -31,7 +32,7 @@
     font-size: 20px;
 }
 
-.blog-details .exercise-benefits > *, .blog-details-section .blog .details-section > *{
+.blog-details .exercise-benefits > *, .blog-details-section .blog-container .details-section > *{
     margin: 30px 0;
 }
 
@@ -107,6 +108,15 @@
 
 .blog-details .image-comment .image-container img{
     border-radius: 50%;
+}
+
+.blog-details .admin-image-comment{
+    background-color: rgb(251, 233, 233);
+}
+
+.blog-details .admin-image-comment i{
+    font-size: 25px;
+    margin: 10px;
 }
 
 @media screen and (max-width: 600px) {

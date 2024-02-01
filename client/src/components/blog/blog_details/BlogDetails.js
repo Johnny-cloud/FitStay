@@ -2,23 +2,48 @@ import './blog_details.css'
 import TopLanding from '../../top_landing/TopLanding'
 import StickySide from '../sticky_side/StickySide'
 import blogsList from '../blogsList'
+import { useContext, useEffect, useState } from 'react'
+import AppContext from '../../app/app_context/AppContext'
 
 const BlogDetails = () => {
-    
+    const [blog, setBlog] = useState({
+        image: 'https://images.unsplash.com/photo-1696446700088-3e800f748407?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        author: "Admin",
+        title: "Why Physical Exercise is Important"
+    })
+
+    const {blogToDisplay} = useContext(AppContext)
+
+    useEffect(() => {
+        if(blogToDisplay){
+            window.scrollTo(0, 0)
+            console.log(blogToDisplay)
+            setBlog(blogToDisplay)
+        }
+       
+    }, [blogToDisplay])
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+
   return (
     <div className='blog-details-section'>
-        <TopLanding landingTitle={'Try Out Our Meditation for Health Boost Today!'} />
+        <TopLanding landingTitle={'Stay Fit With FitStay'} />
         <div className='blog-details-main flex-row-center'>
             <div className='blog-details'>
-                <div className='blog'>
-                    <div className='image-container'><img src='https://images.unsplash.com/photo-1696446700088-3e800f748407?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' alt='' /></div>
+                
+                <div className='blog-container'>
+                    <div className='image-container'><img src={blog.image} alt='' /></div>
                     <div className='details-section'>
-                        <h6>By Admin</h6>
+                        <h4>By {blog.author}</h4>
+                        <h2>{blog.title}</h2>
                         <p>Regular physical activity is one of the most important things you can do for your health. Being physically active can improve your brain health, help manage weight, 
                             reduce the risk of disease, strengthen bones and muscles, and improve your ability to do everyday activities.</p>
                     </div>
-                    
                 </div>
+                    
+
                 <div className='exercise-benefits'>
                     <h2>Why Regular Physical Exercise Is Important</h2>
 
@@ -58,11 +83,12 @@ const BlogDetails = () => {
                         </div>
                     </div>
 
-                    <div className='author-section image-comment flex-row-center'>
+                    <div className='author-section image-comment admin-image-comment flex-row-center'>
                         <div className='image-container'><img src='https://images.unsplash.com/photo-1600486913747-55e5470d6f40?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' alt=''/></div>
                         <div className='details flex-row-center'>
                             <h4>Admin</h4>
                             <p>“The hard days are the best because that’s when champions are made, so if you push through, you can push through anything.” </p>
+                            <p><i class="bi bi-twitter"></i> <i class="bi bi-facebook"></i> <i class="bi bi-instagram"></i></p>
                         </div>
                     </div>
 

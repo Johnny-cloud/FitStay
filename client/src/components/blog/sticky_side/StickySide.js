@@ -1,20 +1,32 @@
 import './sticky_side.css'
 import { Link } from 'react-router-dom'
+import { useContext } from 'react'
+import AppContext from '../../app/app_context/AppContext'
 
 const StickySide = ({blogs}) => {
+  const {setFilterCategory, setBlogToDisplay} = useContext(AppContext)
+
+  const alterFilterCategory = (event) => {
+    setFilterCategory(event.target.id)
+  }
+
+  const alterBlogToDisplay = (blog) => {
+    setBlogToDisplay(blog)
+  }
+
   return (
     <div className='sticky-side'>
           <div className='filtering-container flex-row-center'>
-            <div>Search Item</div>
           <div className='categories'>
             <h3>Categories</h3>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <Link>Yoga</Link></li>
-              <li><i class="bi bi-chevron-right"></i> <Link>Fitness</Link></li>
-              <li><i class="bi bi-chevron-right"></i> <Link>Boxing</Link></li>
-              <li><i class="bi bi-chevron-right"></i> <Link>Body Building</Link></li>
-              <li><i class="bi bi-chevron-right"></i> <Link>Meditation</Link></li>
-              <li><i class="bi bi-chevron-right"></i> <Link>Crossfit</Link></li>
+              <li><i class="bi bi-chevron-right"></i> <Link to={'/blog'} onClick={alterFilterCategory} id='all'>All</Link></li>
+              <li><i class="bi bi-chevron-right"></i> <Link to={'/blog'} onClick={alterFilterCategory} id='yoga'>Yoga</Link></li>
+              <li><i class="bi bi-chevron-right"></i> <Link to={'/blog'} onClick={alterFilterCategory} id='fitness'>Fitness</Link></li>
+              <li><i class="bi bi-chevron-right"></i> <Link to={'/blog'} onClick={alterFilterCategory} id='boxing'>Boxing</Link></li>
+              <li><i class="bi bi-chevron-right"></i> <Link to={'/blog'} onClick={alterFilterCategory} id='body building'>Body Building</Link></li>
+              <li><i class="bi bi-chevron-right"></i> <Link to={'/blog'} onClick={alterFilterCategory} id='meditation'>Meditation</Link></li>
+              <li><i class="bi bi-chevron-right"></i> <Link to={'/blog'} onClick={alterFilterCategory} id='crossfit'>Crossfit</Link></li>
             </ul>
           </div>
           <div className='recent-posts'>
@@ -23,7 +35,7 @@ const StickySide = ({blogs}) => {
               {blogs.slice(0, 6).map(blog => {
                 return(
                   <li>
-                    <Link>
+                    <Link to={'/blog-details'} onClick={() => alterBlogToDisplay(blog)}>
                       <img src={blog.image} alt='' />
                       <div className='details-container'>
                         <p>JAN 23, 2024</p>
@@ -39,10 +51,10 @@ const StickySide = ({blogs}) => {
           <div className='popular-tags'>
             <h3>Popular Tags</h3>
             <ul>
-              <li><Link>Yoga</Link></li>
-              <li><Link>Fitness</Link></li>
-              <li><Link>Meditation</Link></li>
-              <li><Link>Body Building</Link></li>
+              <li><Link to={'/blog'} onClick={alterFilterCategory} id='yoga'>Yoga</Link></li>
+              <li><Link to={'/blog'} onClick={alterFilterCategory} id='fitness'>Fitness</Link></li>
+              <li><Link to={'/blog'} onClick={alterFilterCategory} id='meditation'>Meditation</Link></li>
+              <li><Link to={'/blog'} onClick={alterFilterCategory} id='body building'>Body Building</Link></li>
             </ul>
           </div>
 

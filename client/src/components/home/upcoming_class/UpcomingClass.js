@@ -12,13 +12,13 @@ const UpcomingClass = () => {
         {
             image: "https://images.unsplash.com/photo-1526403646408-57b94dc15399?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             title: "Power Lifting",
-            time: "Tue: 4:00pm-5:00pm"
+            time: "Fri: 4:00pm-5:00pm"
         },
 
         {
             image: "https://plus.unsplash.com/premium_photo-1664109999695-71dd1df7ae3f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             title: "Workout",
-            time: "Mon: 9:00am-10:00am"
+            time: "Fri: 10:00am-11:00am"
         },
 
         {
@@ -30,7 +30,7 @@ const UpcomingClass = () => {
         {
             image: "https://plus.unsplash.com/premium_photo-1672791841826-1967b0ad200d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             title: "Boxing",
-            time: "Thu: 5:00pm-6:00pm"
+            time: "Sat: 5:00pm-6:00pm"
         },
 
         {
@@ -42,7 +42,7 @@ const UpcomingClass = () => {
   return (
     <div className='upcoming-class'>
         <h5>Upcoming Class</h5>
-        <h1>We Provide Body Transforming Classes</h1>
+        <h1>Our Upcoming Classes</h1>
         <div className='flex-row-center'>
 
             {classes.map(elem => {

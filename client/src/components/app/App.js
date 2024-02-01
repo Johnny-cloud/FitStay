@@ -13,11 +13,14 @@ import Blog from '../blog/Blog'
 import BlogDetails from '../blog/blog_details/BlogDetails'
 
 import AppContext from './app_context/AppContext'
+import { useState } from 'react'
 
 const App = () => {
+  const [filterCategory, setFilterCategory] = useState('all')
+  const [blogToDisplay, setBlogToDisplay] = useState(null)
   return (
     <div className='app'>
-      <AppContext.Provider value={{}}>
+      <AppContext.Provider value={{filterCategory, setFilterCategory, blogToDisplay, setBlogToDisplay}}>
         <Navigations />
         <div className='main-content'>
           <Routes>
