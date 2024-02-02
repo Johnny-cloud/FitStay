@@ -1,0 +1,52 @@
+.sticky-side{
+    width: 350px;
+    position: sticky;
+    top: -20%;
+}
+
+
+
+.sticky-side > *{
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+}
+
+
+.sticky-side p, .sticky-side h4{
+    padding: 10px 20px;
+}
+
+.sticky-side p{
+    border-bottom: solid;
+    border-color: rgb(196, 194, 194);
+    border-width: 1.5px;
+}
+
+.sticky-side .join-link{
+    background-color: red;
+    padding: 2% 3%;
+    color: white;
+    margin: 15px 0;
+}
+
+.sticky-side h4{
+    text-align: justify;
+}
+
+.sticky-side .other-class img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.sticky-side .other-class{
+    justify-content: flex-start;
+}
+
+.sticky-side .other-class .details{
+    padding-top: 15px;
+}

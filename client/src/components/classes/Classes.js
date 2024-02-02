@@ -19,7 +19,7 @@ const Classes = () => {
                     <p>The Best Fitness Program</p>
                   </div>
                   <Link className='image-container'><img src={item.image} alt='' /></Link>
-                  <p className='time-container'>{item.time}</p>
+                  <p className='time-container'>{item.day + ' ' + item.time}</p>
               </div>
             )
           })

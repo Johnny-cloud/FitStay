@@ -1,0 +1,102 @@
+.class-details{
+    background-color: rgb(244, 244, 244);
+}
+
+.class-details .main-section{
+    padding: 50px 0;
+}
+
+.class-details .main-section > *{
+    margin: 15px;
+}
+
+
+.class-details .details-container{
+    max-width: 800px;
+    background-color: white;
+}
+
+.class-details .details-container > * > *{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.class-details .details-container p, .class-details .details-container h2{
+    padding: 0 10px;
+}
+
+.class-details .intro .image-container{
+    height: 450px;
+    margin-top: 0;
+}
+
+.class-details .facilities{
+    justify-content: space-evenly;
+}
+
+.class-details .facilities > *{
+    text-align: start;
+    width: 350px;
+    height: 250px;
+}
+
+.class-details .facilities i{
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    font-size: 20px;
+}
+
+
+.class-details .facilities li{
+    margin: 10px 0;
+}
+
+.class-details .things-to-bring ul{
+    justify-content: flex-start;
+}
+
+.class-details .things-to-bring li{
+   margin: 10px; 
+   border-right: solid;
+   border-color: grey;
+   border-width: 1.5px;
+   padding: 10px;
+}
+
+.class-details .things-to-bring li h6{
+    font-size: 18px; 
+ }
+
+ .class-details .things-to-bring li i{
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+ }
+
+ .class-details thead{
+    background-color: rgb(227, 227, 227);
+    color: black;
+ }
+
+ .class-details th, .class-details td{
+    color: black;
+ }
+
+ .class-details tbody{
+    background-color: white;
+ }
+
+ .class-details table td,  .class-details table th{
+    border-color: rgb(196, 193, 193);
+ }
+
+ .class-details .table-container{
+    max-width: 800px;
+ }
+
+ @media screen and (max-width: 600px) {
+    .class-details .intro .image-container{
+        height: 250px;
+    }
+ }

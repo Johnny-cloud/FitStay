@@ -12,12 +12,11 @@
 }
 
 .top-trainers .top-trainer:hover{
-    background-color: white;
     color: red;
 }
 
 .top-trainers img{
-    height: 300px;
-    border-radius: 50%;
+    height: 400px;
+    border-radius: 10px;
     margin-bottom: 10px;
 }

@@ -16,6 +16,7 @@ const Navigations = () => {
                 <Link to={'/'}>Home</Link>
                 <Link to={'/about'}>About Us</Link>
                 <Link to={'/classes'}>Classes</Link>
+                <Link to={'/class-details'}>Class Details</Link>
                 <Link to={'/trainers'}>Trainers</Link>
                 <Link to={'/pricing'}>Pricing</Link>
                 <Link to={'gallery'}>Gallery</Link>
