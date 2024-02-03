@@ -19,9 +19,13 @@ import { useState } from 'react'
 const App = () => {
   const [filterCategory, setFilterCategory] = useState('all')
   const [blogToDisplay, setBlogToDisplay] = useState(null)
+  const [classToDisplay, setClassToDisplay] = useState(null)
+
+  const contextValues = {filterCategory, setFilterCategory, blogToDisplay, setBlogToDisplay, classToDisplay, setClassToDisplay}
+
   return (
     <div className='app'>
-      <AppContext.Provider value={{filterCategory, setFilterCategory, blogToDisplay, setBlogToDisplay}}>
+      <AppContext.Provider value={contextValues}>
         <Navigations />
         <div className='main-content'>
           <Routes>

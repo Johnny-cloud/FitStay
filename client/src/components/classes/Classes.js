@@ -2,9 +2,17 @@ import './classes.css'
 import TopLanding from '../top_landing/TopLanding'
 import { Link } from 'react-router-dom'
 import classList from './classList'
+import AppContext from '../app/app_context/AppContext'
+import { useContext } from 'react'
 
 const Classes = () => {
   const classes = [...classList]
+
+  const {setClassToDisplay} = useContext(AppContext)
+
+  const changeClassToDisplay = (classItem) => {
+    setClassToDisplay(classItem)
+  }
   
   return (
     <div className='classes'>
@@ -15,10 +23,10 @@ const Classes = () => {
             return(
               <div className='class-item'>
                   <div className='details-container'>
-                    <Link className='title'><h2>{item.title}</h2></Link>
+                    <Link to={'/class-details'} onClick={() => changeClassToDisplay(item)} className='title'><h2>{item.title}</h2></Link>
                     <p>The Best Fitness Program</p>
                   </div>
-                  <Link className='image-container'><img src={item.image} alt='' /></Link>
+                  <Link to={'/class-details'} onClick={() => changeClassToDisplay(item)} className='image-container'><img src={item.image} alt='' /></Link>
                   <p className='time-container'>{item.day + ' ' + item.time}</p>
               </div>
             )

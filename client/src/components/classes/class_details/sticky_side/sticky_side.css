@@ -50,3 +50,11 @@
 .sticky-side .other-class .details{
     padding-top: 15px;
 }
+
+.sticky-side .other-class .details:hover{
+    color: red;
+}
+
+.sticky-side .class-info b{
+    margin-left: 15px;
+}

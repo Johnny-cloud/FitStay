@@ -15,7 +15,7 @@ const StickySide = ({blogs}) => {
   }
 
   return (
-    <div className='sticky-side'>
+    <div className='blog-sticky-side'>
           <div className='filtering-container flex-row-center'>
           <div className='categories'>
             <h3>Categories</h3>
@@ -58,9 +58,9 @@ const StickySide = ({blogs}) => {
             </ul>
           </div>
 
-          {/* <div className='advert image-container'>
+          <div className='advert image-container'>
             <img src='https://images.unsplash.com/photo-1538805060514-97d9cc17730c?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' alt='' />
-          </div> */}
+          </div>
         </div>
     </div>
   )

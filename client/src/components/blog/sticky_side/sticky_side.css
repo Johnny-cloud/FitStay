@@ -1,24 +1,24 @@
-.sticky-side{
+.blog-sticky-side{
     width: 400px;
 }
 
-.sticky-side .filtering-container{
+.blog-sticky-side .filtering-container{
     width: 100%;
     margin: 15px;
     height: fit-content;
     position: sticky;
-    top: -150%;
+    top: -100%;
 }
 
-.sticky-side .filtering-container > *{
-    background-color: rgb(232, 230, 230);
+.blog-sticky-side .filtering-container > *{
+    background-color: rgb(244, 244, 244);
     text-align: start;
     width: 100%;
     margin: 15px;
     height: fit-content;
 }
 
-.sticky-side .filtering-container  li{
+.blog-sticky-side .filtering-container  li{
     margin: 15px;
     padding: 10px;
     border-bottom: solid;
@@ -29,49 +29,49 @@
     justify-content: flex-start;
 }
 
-.sticky-side .filtering-container  li > *{
+.blog-sticky-side .filtering-container  li > *{
     margin: 7px
 }
 
 
-.sticky-side .recent-posts img{
+.blog-sticky-side .recent-posts img{
     width: 60px;
     height: 60px;
     border-radius: 50%;
 }
 
-.sticky-side .recent-posts li a {
+.blog-sticky-side .recent-posts li a {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
 }
 
-.sticky-side  li a:hover {
+.blog-sticky-side  li a:hover {
     color: red;
 }
 
-.sticky-side .recent-posts li a  > *{
+.blog-sticky-side .recent-posts li a  > *{
     margin: 7px;
 }
 
-.sticky-side .recent-posts .details-container p {
+.blog-sticky-side .recent-posts .details-container p {
     font-size: 16px;
 }
 
-.sticky-side .recent-posts .details-container h6 {
+.blog-sticky-side .recent-posts .details-container h6 {
     font-size: 18px;
 }
 
-.sticky-side .advert{
+.blog-sticky-side .advert{
     height: 550px
 }
 
 @media screen and (max-width: 600px) {
-    .sticky-side{
+    .blog-sticky-side{
         width: 100%;
     }
 
-    .sticky-side .filtering-container{
+    .blog-sticky-side .filtering-container{
         margin: auto
     }
 }

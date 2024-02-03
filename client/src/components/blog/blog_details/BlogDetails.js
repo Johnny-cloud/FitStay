@@ -17,7 +17,6 @@ const BlogDetails = () => {
     useEffect(() => {
         if(blogToDisplay){
             window.scrollTo(0, 0)
-            console.log(blogToDisplay)
             setBlog(blogToDisplay)
         }
        

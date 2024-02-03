@@ -1,6 +1,16 @@
 import './blogs.css'
+import {Link} from 'react-router-dom'
+import AppContext from '../../app/app_context/AppContext'
+import { useContext } from 'react'
 
 const Blogs = () => {
+
+    const {setBlogToDisplay} = useContext(AppContext)
+
+    const changeBlogDisplayed = (blog) => {
+        setBlogToDisplay(blog)
+    }
+
     const blogs = [
         { 
             author: "Jenny",
@@ -31,13 +41,13 @@ const Blogs = () => {
             {
                 blogs.map(blog => {
                     return(
-                        <div className='blog image-container'>
+                        <Link onClick={() => changeBlogDisplayed(blog)} to={'/blog-details'} className='blog image-container'>
                             <img src={blog.image} alt='' />
                             <div className='details'>
                                 <h6>{blog.category}</h6>
                                 <h4>{blog.title}.</h4>
                             </div>
-                        </div>
+                        </Link>
                     )
                 })
             }

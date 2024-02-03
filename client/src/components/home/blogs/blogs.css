@@ -8,6 +8,11 @@
     position: relative;
     background-color: black;
     margin: 15px;
+    display: block;
+}
+
+.blogs .blog:hover .details{
+    color: red;
 }
 
 .blogs .blog .details{

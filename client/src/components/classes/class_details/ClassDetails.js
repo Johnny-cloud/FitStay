@@ -1,7 +1,8 @@
-import {useState} from 'react'
+import {useState, useEffect, useContext} from 'react'
 import TopLanding from '../../top_landing/TopLanding'
 import './class_details.css'
 import StickySide from './sticky_side/StickySide'
+import AppContext from '../../app/app_context/AppContext'
 
 const ClassDetails = () => {
 
@@ -11,6 +12,21 @@ const ClassDetails = () => {
         day: "Saturday",
         time: "9:00am-10:00am",
     })
+
+    const {classToDisplay} = useContext(AppContext)
+
+    useEffect(() => {
+        if(classToDisplay){
+            window.scrollTo(0, 0)
+            setSelectedClass(classToDisplay)
+            console.log(classToDisplay)
+        }
+    }, [classToDisplay])
+
+    useEffect(() => {
+        window.scrollTo(0,0)
+    }, [])
+
   return (
     <div className='class-details'>
         <TopLanding landingTitle={selectedClass.title} />
@@ -81,7 +97,7 @@ const ClassDetails = () => {
                 </div>
             </div>
             
-            <StickySide />
+            <StickySide selectedClass={selectedClass}/>
 
         </div> 
         {/* End Main section */}
