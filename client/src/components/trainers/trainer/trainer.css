@@ -1,0 +1,73 @@
+.trainer .image-container a{
+    display: block;
+}
+
+.trainers .flex-row-center{
+    padding: 50px 0;
+    max-width: 1500px;
+    margin: auto;
+}
+
+.trainer{
+    width: 400px;
+    height: 650px;
+    position: relative;
+    margin: 15px;
+}
+
+.trainer p{
+    text-align: center;
+}
+
+.trainer .details-container{
+    position: absolute;
+    height: 550px;
+    padding-top: 75%;
+    width: 100%;
+    bottom: 0;
+    z-index: 0;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.trainer .details-container a:hover{
+    color: red;
+}
+
+.trainer .image-container{
+    width: 270px;
+    height: 330px;
+    margin: auto;
+    left: 15%;
+    z-index: 2;
+    background-color: black;
+    position: absolute;
+}
+
+.trainer .image-container, .trainer img{
+    border-radius: 10px;
+}
+
+.trainer .description{
+    width: 80%;
+    margin: auto;
+}
+
+.trainer .link-icons{
+    margin: 20px;
+}
+
+.trainer .link-icons > *{
+    font-size: 25px;
+    margin: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    .trainer .image-container{
+        left: 10%;
+    }
+
+    .trainer .details-container{
+        padding-top: 80%;
+    }
+}

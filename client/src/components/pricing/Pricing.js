@@ -66,7 +66,7 @@ const Pricing = () => {
                       plan.benefits.map(benefit => <li><i class="bi bi-check2-circle"></i> {benefit}</li>)
                     }
                   </ul>
-                  <div className='purchase-btn-container'><Link className='purchase-btn'>PURCHASE NOW <i class="bi bi-arrow-right"></i></Link></div>
+                  <div className='purchase-btn-container'><Link to={'/contact'} className='purchase-btn'>PURCHASE NOW <i class="bi bi-arrow-right"></i></Link></div>
                 </div>
               </div>
             )

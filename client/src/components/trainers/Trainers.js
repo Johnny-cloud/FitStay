@@ -1,5 +1,6 @@
 import './trainers.css'
 import TopLanding from '../top_landing/TopLanding'
+import Trainer from './trainer/Trainer'
 
 const Trainers = () => {
   const trainers = [
@@ -39,21 +40,7 @@ const Trainers = () => {
       <TopLanding landingTitle={"Our Trainers"} />
       <div className='flex-row-center'>
         {
-          trainers.map(trainer => {
-            return (
-              <div className='trainer'>
-                <div className='image-container'>
-                  <img src={trainer.image} alt='' />
-                </div>
-                <div className='details-container'>
-                  <h2>{trainer.name}</h2>
-                  <h6>{trainer.role}</h6>
-                  <p className='description'>Our trainers provide with the best training by following our physicians' guide and your health status</p>
-                  <p className='link-icons'><i class="bi bi-facebook"></i> <i class="bi bi-twitter"></i> <i class="bi bi-instagram"></i></p>
-                </div>
-              </div>
-            )
-          })
+          trainers.map(trainer => <Trainer trainer={trainer}/>)
         }
       </div>
     </div>

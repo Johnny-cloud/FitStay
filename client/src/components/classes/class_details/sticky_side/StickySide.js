@@ -24,7 +24,7 @@ const StickySide = ({selectedClass}) => {
                 </div>
                 
                 <div>
-                    <Link className='join-link'>JOIN NOW <i class="bi bi-arrow-right"></i></Link>
+                    <Link to={'/contact'} className='join-link'>JOIN NOW <i class="bi bi-arrow-right"></i></Link>
                 </div>
                 
             </div>

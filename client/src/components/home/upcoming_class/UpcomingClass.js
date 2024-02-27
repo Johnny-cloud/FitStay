@@ -67,7 +67,7 @@ const UpcomingClass = () => {
                         <div className='details'>
                             <Link to={'/class-details'} onClick={() => changeClassToDisplay(elem)}><h4>{elem.title}</h4></Link>
                             <p><i class="bi bi-clock"></i> {elem.time}</p>
-                            <Link className='link-btn'>JOIN NOW <i class="bi bi-arrow-right"></i></Link>
+                            <Link to={'/contact'} className='link-btn'>JOIN NOW <i class="bi bi-arrow-right"></i></Link>
                         </div>
                     </div>
                 )
