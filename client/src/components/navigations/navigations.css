@@ -11,3 +11,12 @@ nav a{
     text-decoration: none;
     color: aliceblue;
 }
+
+nav a:hover{
+    border-bottom: solid;
+    border-color: red;
+}
+
+nav a:active, nav a:focus{
+    color: red;
+}

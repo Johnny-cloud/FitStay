@@ -14,17 +14,15 @@ const Navigations = () => {
             <Offcanvas.Body>
               <Nav className='me-auto'>
                 <Link to={'/'}>Home</Link>
-                <Link to={'/about'}>About Us</Link>
+                <Link to={'/about'}>About</Link>
                 <Link to={'/classes'}>Classes</Link>
-                <Link to={'/class-details'}>Class Details</Link>
                 <Link to={'/trainers'}>Trainers</Link>
                 <Link to={'/pricing'}>Pricing</Link>
                 <Link to={'gallery'}>Gallery</Link>
                 <Link to={'/schedule'}>Schedule</Link>
                 <Link to={'/blog'}>Blogs</Link>
-                <Link to={'/blog-details'}>Blog Details</Link>
+                <Link to={'/contact'}>Contact</Link>
                 <Link to={'/shop'}>Shop</Link>
-
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>

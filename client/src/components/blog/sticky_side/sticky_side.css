@@ -1,13 +1,13 @@
 .blog-sticky-side{
     width: 400px;
+    height: 100%;
+    position: sticky;
+    top: 10px;
 }
 
 .blog-sticky-side .filtering-container{
     width: 100%;
     margin: 15px;
-    height: fit-content;
-    position: sticky;
-    top: -100%;
 }
 
 .blog-sticky-side .filtering-container > *{

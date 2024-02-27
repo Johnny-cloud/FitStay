@@ -12,6 +12,8 @@ import Navigations from '../navigations/Navigations'
 import Blog from '../blog/Blog'
 import BlogDetails from '../blog/blog_details/BlogDetails'
 import ClassDetails from '../classes/class_details/ClassDetails'
+import Footer from '../footer/Footer'
+import Contact from '../contact/Contact'
 
 import AppContext from './app_context/AppContext'
 import { useState } from 'react'
@@ -37,11 +39,13 @@ const App = () => {
             <Route exact path='/gallery' element={<Gallery />} />
             <Route exact path='/schedule' element={<Schedule />} />
             <Route exact path='/blog' element={<Blog />} />
+            <Route exact path='/contact' element={<Contact />} />
             <Route exact path='/blog-details' element={<BlogDetails />}/>
             <Route exact path='/class-details' element={<ClassDetails />} />
           </Routes>
           
         </div>
+        <Footer />
       </AppContext.Provider>
     </div>
   )
