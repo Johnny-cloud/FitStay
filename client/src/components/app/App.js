@@ -23,8 +23,10 @@ const App = () => {
   const [filterCategory, setFilterCategory] = useState('all')
   const [blogToDisplay, setBlogToDisplay] = useState(null)
   const [classToDisplay, setClassToDisplay] = useState(null)
+  const [selectedTrainer, setSelectedTrainer] = useState(null)
 
-  const contextValues = {filterCategory, setFilterCategory, blogToDisplay, setBlogToDisplay, classToDisplay, setClassToDisplay}
+  const contextValues = {filterCategory, setFilterCategory, blogToDisplay, setBlogToDisplay, 
+    classToDisplay, setClassToDisplay, selectedTrainer, setSelectedTrainer }
 
   return (
     <div className='app'>

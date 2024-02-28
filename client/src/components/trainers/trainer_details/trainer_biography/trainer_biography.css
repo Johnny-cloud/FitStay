@@ -1,0 +1,41 @@
+.trainer-biography{
+    max-width: 800px;
+    text-align: justify;
+    margin: 15px;
+    padding: 10px;
+    background-color: rgb(243, 243, 243);
+}
+
+.trainer-biography .bi{
+    color: red;
+}
+
+.trainer-biography form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 400px;
+    margin: auto;
+}
+
+.trainer-biography form input{
+    border: none;
+    border-bottom: solid;
+    border-width: 2px;
+    background-color: inherit;
+}
+
+.trainer-biography form > *{
+    margin: 10px;
+}
+
+.trainer-biography button{
+    background-color: red;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    margin: auto;
+}

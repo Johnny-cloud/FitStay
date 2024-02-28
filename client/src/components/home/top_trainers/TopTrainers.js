@@ -1,7 +1,11 @@
 import './top_trainers.css'
 import { Link } from 'react-router-dom'
+import { useContext } from 'react'
+import AppContext from '../../app/app_context/AppContext'
 
 const TopTrainers = () => {
+    const {setSelectedTrainer} = useContext(AppContext)
+
     const trainers = [
         {   
             name: "Janie",
@@ -16,6 +20,10 @@ const TopTrainers = () => {
             image: "https://images.unsplash.com/photo-1541338784564-51087dabc0de?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         },
     ]
+
+    const setTrainerToDisplay = (trainer) => {
+        setSelectedTrainer(trainer)
+    }
   return (
     <div className='top-trainers'>
         <h5>Top Trainers</h5>
@@ -24,7 +32,7 @@ const TopTrainers = () => {
             {
                 trainers.map(trainer => {
                     return (
-                        <Link to={'/trainer-details'} className='top-trainer'>
+                        <Link onClick={() => setTrainerToDisplay(trainer)} to={'/trainer-details'} className='top-trainer'>
                             <div className='image-container'>
                                 <img src={trainer.image} alt=''/>
                             </div>

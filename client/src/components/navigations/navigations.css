@@ -6,17 +6,31 @@
     color: aliceblue;
 }
 
-nav a{
+.me-auto a{
     margin:0 15px;
     text-decoration: none;
     color: aliceblue;
 }
 
-nav a:hover{
+.me-auto a:hover{
     border-bottom: solid;
     border-color: red;
 }
 
-nav a:active, nav a:focus{
+.me-auto a:active, .me-auto a:focus{
     color: red;
+}
+
+.offcanvas{
+    background-color: black;
+    color: white;
+}
+
+.offcanvas a{
+    margin: 15px;
+}
+
+.offcanvas-header{
+    margin: auto;
+    font-size: 40px;
 }

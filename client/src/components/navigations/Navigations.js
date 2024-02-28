@@ -1,28 +1,35 @@
 import './navigations.css'
 import {Link} from 'react-router-dom'
 import {Navbar, Nav, Container, Offcanvas} from 'react-bootstrap'
+import { useState } from 'react'
 
 const Navigations = () => {
+
+  const [expanded, setExpanded] = useState(false)
+
+  const hideNavbar = () => {
+    setExpanded(false)
+  }
   return (
-    <Navbar expand="lg" fixed='top' variant='dark'>
+    <Navbar expand="lg" sticky='top' variant='dark' expanded={expanded}>
       <Container>
         <Navbar.Brand><h2>FitStay</h2></Navbar.Brand>
-        <Navbar.Toggle />
+        <Navbar.Toggle onClick={() => expanded ? setExpanded(false) : setExpanded('expanded')} />
         <Navbar.Collapse>
           <Navbar.Offcanvas>
-            <Offcanvas.Header></Offcanvas.Header>
+            <Offcanvas.Header onClick={hideNavbar}><i class="bi bi-x-circle"></i></Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className='me-auto'>
-                <Link to={'/'}>Home</Link>
-                <Link to={'/about'}>About</Link>
-                <Link to={'/classes'}>Classes</Link>
-                <Link to={'/trainers'}>Trainers</Link>
-                <Link to={'/pricing'}>Pricing</Link>
-                <Link to={'gallery'}>Gallery</Link>
-                <Link to={'/schedule'}>Schedule</Link>
-                <Link to={'/blog'}>Blogs</Link>
-                <Link to={'/contact'}>Contact</Link>
-                <Link to={'/shop'}>Shop</Link>
+                <Link onClick={hideNavbar} to={'/'}>Home</Link>
+                <Link onClick={hideNavbar} to={'/about'}>About</Link>
+                <Link onClick={hideNavbar} to={'/classes'}>Classes</Link>
+                <Link onClick={hideNavbar} to={'/trainers'}>Trainers</Link>
+                <Link onClick={hideNavbar} to={'/pricing'}>Pricing</Link>
+                <Link onClick={hideNavbar} to={'gallery'}>Gallery</Link>
+                <Link onClick={hideNavbar} to={'/schedule'}>Schedule</Link>
+                <Link onClick={hideNavbar} to={'/blog'}>Blogs</Link>
+                <Link onClick={hideNavbar} to={'/contact'}>Contact</Link>
+                <Link onClick={hideNavbar} to={'/shop'}>Shop</Link>
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>

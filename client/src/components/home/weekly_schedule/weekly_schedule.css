@@ -1,12 +1,13 @@
 .table-container{
     max-width: 1200px;
+    min-width: 350px;
     margin: auto;
-    margin-top: 50px;
 }
 
 table{
     background-color: black;
     width: 100%;
+    margin: auto;
 }
 
 td, th{

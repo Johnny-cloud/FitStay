@@ -1,0 +1,11 @@
+.trainer-details .main-content{
+    padding: 50px 0;
+}
+
+.trainer-details .main-content > *{
+    margin: 30px 0;
+}
+
+.trainer-details .trainer .details-container{
+    background-color: rgb(240, 237, 237);
+}
