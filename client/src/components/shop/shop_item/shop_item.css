@@ -1,0 +1,25 @@
+.shop-item{
+    width: 350px;
+    height: 400px;
+    background-color: rgb(246, 246, 246);
+    margin: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.shop-item img{
+    height: 250px;
+}
+
+.shop-item .add-to-cart-btn{
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 2%;
+}
+
+.price{
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+}

@@ -46,7 +46,7 @@ const PricingChart = () => {
     ]
   return (
     <div className='pricing-chart'>
-        <h5>Pricing Chart</h5>
+        <h5>Membership</h5>
         <h1>Our Membership Plans</h1>
         <div className='flex-row-center'>
             {

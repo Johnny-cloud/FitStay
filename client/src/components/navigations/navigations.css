@@ -6,6 +6,12 @@
     color: aliceblue;
 }
 
+.navbar-toggler{
+    border: solid;
+    border-color: white;
+    color: white;
+}
+
 .me-auto a{
     margin:0 15px;
     text-decoration: none;

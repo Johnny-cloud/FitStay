@@ -1,0 +1,28 @@
+.side-item{
+    justify-content: space-between;
+}
+
+.side-item .image-container{
+    height: 60px;
+    width: 60px;
+}
+
+.side-item h6{
+    font-size: 18px;
+}
+
+.side-item img{
+    border-radius: 50%;
+}
+
+.side-item .details > *{
+    margin: 5px;
+}
+
+.side-item .bi-star-fill{
+    color: orange;
+}
+
+.side-item > *{
+    margin: 10px;
+}

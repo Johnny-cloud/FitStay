@@ -1,0 +1,29 @@
+.sidebar{
+    height: 100%;
+    position: sticky;
+    top: 100px;
+    margin-top: 15px;
+}
+
+.sidebar li, .sidebar h3{
+    text-align: justify;
+    padding: 10px 0;
+}
+
+.sidebar li{
+    border-bottom: solid;
+    border-color: rgb(202, 202, 202);
+    border-width: 1px;
+}
+
+.sidebar li:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.sidebar > *{
+    background-color: rgb(229, 229, 229);
+    margin-bottom: 30px;
+    padding: 20px 10px;
+    width: 350px;
+}

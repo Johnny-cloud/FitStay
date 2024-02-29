@@ -33,8 +33,8 @@ const Blogs = () => {
     ]
   return (
     <div className='blogs'>
-        <h5>News & Blogs</h5>
-        <h1>Our Latest Blogs</h1>
+        <h5>From Us</h5>
+        <h1>Our Latest News</h1>
         <p>Check out our blogs for the latest news on fitness!</p>
         <div className='flex-row-center'>
 

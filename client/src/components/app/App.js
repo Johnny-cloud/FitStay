@@ -15,6 +15,7 @@ import ClassDetails from '../classes/class_details/ClassDetails'
 import Footer from '../footer/Footer'
 import Contact from '../contact/Contact'
 import TrainerDetails from '../trainers/trainer_details/TrainerDetails'
+import Shop from '../shop/Shop'
 
 import AppContext from './app_context/AppContext'
 import { useState } from 'react'
@@ -46,6 +47,7 @@ const App = () => {
             <Route exact path='/trainer-details' element={<TrainerDetails />} />
             <Route exact path='/blog-details' element={<BlogDetails />}/>
             <Route exact path='/class-details' element={<ClassDetails />} />
+            <Route exact path='/shop' element={<Shop />}/>
           </Routes>
           
         </div>
