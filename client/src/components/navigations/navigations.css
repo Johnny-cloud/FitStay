@@ -13,9 +13,11 @@
 }
 
 .me-auto a{
-    margin:0 15px;
+    margin:0 17px;
+    padding: 5px;
     text-decoration: none;
     color: aliceblue;
+    width: fit-content;
 }
 
 .me-auto a:hover{
@@ -33,10 +35,41 @@
 }
 
 .offcanvas a{
-    margin: 15px;
+    margin: 10px;
 }
 
 .offcanvas-header{
     margin: auto;
     font-size: 40px;
 }
+
+.me-auto .bi-cart-check{
+    font-size: 25px;
+}
+
+.my-dropdown-menu{
+    display: none;
+}
+
+.my-dropdown:hover .my-dropdown-menu{
+    display: block;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    border-top: solid;
+    border-color: red;
+    border-width: 3px;
+    width: 150px;
+}
+
+.my-dropdown-menu a{
+    color: black;
+    padding: 5px;
+    text-align: start;
+}
+

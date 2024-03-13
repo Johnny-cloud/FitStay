@@ -1,5 +1,17 @@
 .contact .main-content{
-    padding: 50px 0;
+    padding: 50px 0 0px;
+    max-width: 700px;
+    margin: auto;
+    text-align: justify;
+}
+
+.contact .main-content > *{
+    padding: 5px 0;
+}
+
+.contact .main-content .bi{
+    font-size: 22px;
+    margin: 0 5px;
 }
 
 .contact{
@@ -11,19 +23,27 @@
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 700px;
-    margin: auto;
+    max-width: 650px;
+    background-color: rgb(237, 234, 234);
+    border-radius: 10px;
+    padding: 20px 5px;
 }
 
 .contact form > *{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 10px 0;
+    padding: 5px;
 }
 
 .contact form input, .contact form textarea{
     border: none;
     border-bottom: solid;
     border-width: 2px;
-    border-color: black;
+    border-color: rgb(144, 141, 141);
+    background-color: inherit;
 }
 
 .contact form input:focus, .contact form textarea:focus{
@@ -34,10 +54,10 @@
     width: 200px;
     margin: 15px auto;
     border: none;
-    border-radius: 10px;
-    background-color: black;
-    color: red;
-    padding: 10px 5px;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    padding: 15px 5px;
 }
 
 .contact form button:hover{
