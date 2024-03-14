@@ -3,11 +3,17 @@ import { Link } from 'react-router-dom'
 import { useContext } from 'react'
 import AppContext from '../../app/app_context/AppContext'
 
-const StickySide = ({blogs}) => {
-  const {setFilterCategory, setBlogToDisplay} = useContext(AppContext)
+const StickySide = ({blogs, setFilteredBlogs}) => {
+
+  const {setBlogToDisplay} = useContext(AppContext)
 
   const alterFilterCategory = (event) => {
-    setFilterCategory(event.target.id)
+    if(event.target.id === 'all'){
+      setFilteredBlogs(blogs)
+    } else{
+        setFilteredBlogs(blogs.filter(blog => blog.category === event.target.id))
+    }
+    
   }
 
   const alterBlogToDisplay = (blog) => {

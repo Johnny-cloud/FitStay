@@ -6,3 +6,22 @@
     max-width: 800px;
     margin-right: 10px;
 }
+
+.shop .page-btns button{
+    padding: 7px 15px;
+    margin: 10px;
+    border: solid;
+    border-color: rgb(187, 186, 186);
+    border-radius: 5px;
+}
+
+.shop .page-btns button:focus, .shop .page-btns button:hover{
+    background-color: red;
+    color: white;
+    border-color: red;
+}
+
+.shop .results{
+    font-size: 20px;
+    font-weight: bold;
+}

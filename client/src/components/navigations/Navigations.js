@@ -1,11 +1,13 @@
 import './navigations.css'
 import {Link} from 'react-router-dom'
 import {Navbar, Nav, Container, Offcanvas} from 'react-bootstrap'
-import { useState } from 'react'
+import { useContext, useState } from 'react'
+import AppContext from '../app/app_context/AppContext'
 
 const Navigations = () => {
 
   const [expanded, setExpanded] = useState(false)
+  const {cart} = useContext(AppContext)
 
   const hideNavbar = () => {
     setExpanded(false)
@@ -38,7 +40,7 @@ const Navigations = () => {
                 
               </Nav>
               <Nav className='me-auto'>
-                <Link><span><i class="bi bi-cart-check"></i>Cart</span></Link>
+                <Link to={'/cart'}><span><i class="bi bi-cart-check"><sup>{cart.length}</sup></i>Cart</span></Link>
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>

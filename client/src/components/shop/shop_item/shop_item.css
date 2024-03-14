@@ -1,6 +1,6 @@
 .shop-item{
     width: 350px;
-    height: 400px;
+    height: 440px;
     background-color: rgb(246, 246, 246);
     margin: 15px;
     border: none;
@@ -9,6 +9,10 @@
 
 .shop-item img{
     height: 250px;
+}
+
+.shop-item .bi-star-fill{
+    color: orange;
 }
 
 .shop-item .add-to-cart-btn{

@@ -1,0 +1,35 @@
+.cart .main-content{
+    padding: 50px 0;
+}
+
+.cart .main-content > *{
+    margin: 15px;
+}
+
+.cart .cart-totals{
+    border: solid;
+    border-radius: 5px;
+    border-width: 2px;
+    padding: 20px 5px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 100%;
+    position: sticky;
+    top: 150px;
+    margin: auto 15px;
+}
+
+.cart .cart-totals > *{
+    margin: 15px 0;
+}
+
+.cart .cart-totals a{
+    padding: 15px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}

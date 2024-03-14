@@ -13,9 +13,9 @@
     text-align: justify;
 }
 
-.blog-details .blog .image-container{
+.blog-details .blog-container .image-container{
     width: 800px;
-    height: 500px;
+    height: 470px;
 }
 
 .blog-details .images-container .image-container{
@@ -135,7 +135,7 @@
 }
 
 @media screen and (max-width: 370px) {
-    .blog-details .blog .image-container{
+    .blog-details .blog-container .image-container{
         width: 360px;
         height: 250px;
     }
