@@ -5,7 +5,8 @@
 }
 
 .home-about .image-container{
-    width: 600px;
+    width: 500px;
+    height: 500px;
 }
 
 .home-about img{
@@ -14,6 +15,7 @@
 
 @media screen and (max-width: 1200px) {
     .home-about .image-container{
-        height: 400px;
+        height: 350px;
+        width: 350px;
     }
 }

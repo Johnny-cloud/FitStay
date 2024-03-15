@@ -9,8 +9,13 @@ import PricingChart from './pricing_chart/PricingChart'
 import ShopOnline from './shop_online/ShopOnline'
 import Testimonials from './testimonials/Testimonials'
 import Blogs from './blogs/Blogs'
+import { useEffect } from 'react'
 
 const Home = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div className='home'>
       <Landing />
