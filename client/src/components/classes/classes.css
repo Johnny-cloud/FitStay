@@ -56,3 +56,13 @@
 .class-item .title:hover{
     color: red;
 }
+
+@media screen and (max-width: 390px) {
+    .class-item{
+        height: 340px;
+    }
+
+    .class-item .image-container{
+        height: 240px;
+    }
+}

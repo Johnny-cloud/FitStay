@@ -5,7 +5,8 @@
 }
 
 .who-we-are .image-container{
-    width: 600px;
+    width: 500px;
+    height: 500px;
 
 }
 
@@ -26,7 +27,7 @@
 
 @media screen and (max-width: 1200px) {
     .who-we-are .image-container{
-        width: 400px;
-        height: 400px;
+        width: 350px;
+        height: 350px;
     }
 }

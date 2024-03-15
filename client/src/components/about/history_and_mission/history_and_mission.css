@@ -10,7 +10,7 @@
 }
 
 .history-and-mission .details{
-    padding: 40px 100px 0 0px;
+    padding: 40px 100px 0 8px;
     height: 300px;
     margin: auto 0;
     clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
@@ -28,8 +28,9 @@
     }
 
     .history-and-mission .details{
-        padding: 50px 5% 0;
+        padding: 10px;
         clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+        height: fit-content;
     }
 
     .history-and-mission .image-container{
