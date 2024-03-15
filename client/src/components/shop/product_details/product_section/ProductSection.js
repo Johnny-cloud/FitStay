@@ -1,7 +1,10 @@
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 import './product_section.css'
+import AppContext from '../../../app/app_context/AppContext'
+import {Link} from 'react-router-dom'
 
 const ProductSection = ({product}) => {
+    const {cart, setCart} = useContext(AppContext)
     const [quantity, setQuantity] = useState(product.quantity)
 
     /* Set item quantity to the state quantity ***/
@@ -18,6 +21,16 @@ const ProductSection = ({product}) => {
         } else{
             setQuantity(quantity - 1)
         }
+    }
+
+    const addToCart = () => {
+        let itemIsInCart = cart.find(item => item.name === product.name)
+        if(itemIsInCart){
+            alert("Item is in cart")
+        } else{
+         setCart([...cart, product])   
+        }
+        
     }
 
   return (
@@ -40,7 +53,7 @@ const ProductSection = ({product}) => {
                 <button onClick={decreaseQuantity} className='qty-btn'>-</button>
                 <span>{quantity}</span>
                 <button onClick={increaseQuantity} className='qty-btn'>+</button>
-                <button className='add-to-cart-btn'>ADD TO CART</button>
+                <Link to={'/cart'}><button className='add-to-cart-btn' onClick={addToCart}>ADD TO CART</button></Link>
             </div>
         </div>
     </div>
