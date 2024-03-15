@@ -1,6 +1,7 @@
 import './trainers.css'
 import TopLanding from '../top_landing/TopLanding'
 import Trainer from './trainer/Trainer'
+import { useEffect } from 'react'
 
 const Trainers = () => {
   const trainers = [
@@ -35,6 +36,10 @@ const Trainers = () => {
       image: "https://images.unsplash.com/photo-1605235456159-6a14813ff187?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
   ]
+
+  useEffect(() => {
+    window.scrollTo(0, 30)
+  }, [])
   return (
     <div className='trainers'>
       <TopLanding landingTitle={"Our Trainers"} />

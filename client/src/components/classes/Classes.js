@@ -3,7 +3,7 @@ import TopLanding from '../top_landing/TopLanding'
 import { Link } from 'react-router-dom'
 import classList from './classList'
 import AppContext from '../app/app_context/AppContext'
-import { useContext } from 'react'
+import { useContext, useEffect } from 'react'
 
 const Classes = () => {
   const classes = [...classList]
@@ -13,6 +13,10 @@ const Classes = () => {
   const changeClassToDisplay = (classItem) => {
     setClassToDisplay(classItem)
   }
+
+  useEffect(() => {
+    window.scrollTo(0, 30)
+  }, [])
   
   return (
     <div className='classes'>
