@@ -30,6 +30,7 @@ const App = () => {
   const [selectedTrainer, setSelectedTrainer] = useState(null)
   const [selectedItem, setSelectedItem] = useState({
     name: "Sleeveless Shirt",
+    quantity: 1,
     price: 100,
     image: "https://images.unsplash.com/photo-1525171254930-643fc658b64e?q=80&w=1977&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 },)
