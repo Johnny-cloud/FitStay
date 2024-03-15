@@ -57,8 +57,10 @@ const Pricing = () => {
           pricingPlans.map(plan => {
             return (
                 <div className='pricing-plan'>
-                <div className='image-container'><img src={plan.image} alt='' /></div>
-                <div className='pricing-type'>{plan.title}</div>
+                <div className='image-container'><img src={plan.image} alt='' />
+                  <div className='pricing-type'>{plan.title}</div>
+                </div>
+                
                 <div className='details'>
                   <p><span className='price'>${plan.price}</span> per month</p>
                   <ul>
