@@ -18,6 +18,7 @@ import TrainerDetails from '../trainers/trainer_details/TrainerDetails'
 import Shop from '../shop/Shop'
 import ProductDetails from '../shop/product_details/ProductDetails'
 import Cart from '../cart/Cart'
+import Checkout from '../checkout/Checkout'
 
 import AppContext from './app_context/AppContext'
 import { useEffect, useState } from 'react'
@@ -54,7 +55,7 @@ const App = () => {
     <div className='app'>
       <AppContext.Provider value={contextValues}>
         <Navigations />
-        <div className='main-content'>
+        <div className='main-content-container'>
           <Routes>
             <Route exact path='/' element={<Home />} />
             <Route exact path='/about' element={<About />} />
@@ -71,6 +72,7 @@ const App = () => {
             <Route exact path='/shop' element={<Shop />}/>
             <Route exact path='/product-details' element={<ProductDetails />} />
             <Route exact path='/cart' element={<Cart />} />
+            <Route exact path='/checkout' element={<Checkout />} />
           </Routes>
           
         </div>

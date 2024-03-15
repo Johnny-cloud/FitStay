@@ -1,0 +1,34 @@
+.billing-card{
+    width: 500px;
+    padding: 30px 5px;
+    margin-bottom: 30px;
+}
+
+.billing-card form > *{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.billing-card form > * > *{
+    padding: 5px 0;
+}
+
+.billing-card form{
+    padding: 10px 0;
+}
+
+.billing-card form input, .billing-card{
+    border: solid;
+    border-color: rgb(139, 139, 139);
+    border-radius: 5px;
+    border-width: 2px;
+}
+
+@media screen and (max-width: 500px) {
+    .billing-card{
+        width: 360px;
+    }
+}

@@ -43,7 +43,7 @@ const CartItem = ({item, updateTotals}) => {
         </div>
         <div>
             <div className='qty-container'>Qty: <button onClick={reduceQty}>-</button>{qty}<button onClick={addQty}>+</button></div>
-            <div>Tot: <b>${item.price * item.quantity}</b></div>
+            <div>Tot:<b> ${item.price * item.quantity}</b></div>
             <div><button onClick={removeFromCart} className='del-btn'>Remove<i class="bi bi-trash"></i></button></div>
         </div>
     </div>
