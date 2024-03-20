@@ -1,7 +1,7 @@
 import './checkout.css'
 import TopLanding from '../top_landing/TopLanding'
 import AppContext from '../app/app_context/AppContext'
-import { useContext } from 'react'
+import { useContext, useEffect } from 'react'
 import CartItem from './cart_item/CartItem'
 import BillingInfo from './billing_info/BillingInfo'
 import CardInfo from './card_info/CardInfo'
@@ -9,6 +9,9 @@ import CardInfo from './card_info/CardInfo'
 const Checkout = () => {
     const {cart} = useContext(AppContext);
     const totals = cart.reduce((total, item) => total + (item.quantity * item.price), 0)
+    useEffect(() => {
+      window.scrollTo(0, 0)
+    }, [])
   return (
     <div className='checkout'>
         <TopLanding landingTitle={'Chekout'} />

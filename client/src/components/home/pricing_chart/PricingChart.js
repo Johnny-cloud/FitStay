@@ -62,7 +62,7 @@ const PricingChart = () => {
                             </ul>
                         </p>
                         <div className='purchase-btn'>
-                            <Link>Purchase Now <i class="bi bi-arrow-right"></i></Link>
+                            <Link to={'/contact'}>Purchase Now <i class="bi bi-arrow-right"></i></Link>
                         </div>
                     </div>
                     )

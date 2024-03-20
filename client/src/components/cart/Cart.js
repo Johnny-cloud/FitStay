@@ -14,8 +14,9 @@ const Cart = () => {
   }
 
   useEffect(() => {
+    window.scrollTo(0, 0)
     updateTotals()
-  }, [])
+  }, [cart, cart.length])
 
   return (
     <div className='cart'>
