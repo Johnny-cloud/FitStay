@@ -14,7 +14,12 @@ const ShopItem = ({item}) => {
   const {setSelectedItem} = useContext(AppContext)
 
   const addToCart = ()  => {
-    setCart([...cart, item])
+    let itemIsInCart = cart.find(product => item.name === product.name)
+        if(itemIsInCart){
+            alert("Item is in cart")
+        } else{
+         setCart([...cart, item])   
+        }
   }
 
   return (
